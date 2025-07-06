@@ -1,0 +1,41 @@
+# Ignore build outputs
+bin/
+obj/
+out/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Ignore Rider and VS Code settings
+.idea/
+.vscode/
+*.code-workspace
+
+# Ignore SQLite database
+*.db
+*.db-journal
+
+# Ignore EF Core Migrations metadata (optional if you don’t want migration history)
+# Migrations/
+
+# Ignore logs
+*.log
+
+# Ignore temporary files
+*.tmp
+*.temp
+*.bak
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore ReSharper
+_ReSharper*/
+*.DotSettings.user
+
+# Ignore dotnet tools
+.dotnet-tools/
