@@ -1,0 +1,62 @@
+-> What is a RESTful Web Service?
+REST (Representational State Transfer) is an architectural style for building web services using standard HTTP methods.
+
+-> Features of REST Architecture:
+
+Stateless: Each request contains all information needed, no session is maintained.
+
+Client-Server: Clear separation between client and server.
+
+Cacheable: Responses can be cached to improve performance.
+
+Uniform Interface: Standardized URLs, verbs, and response formats.
+
+Representation-based: Resources are represented in various formats (JSON, XML, etc.).
+
+Not limited to XML: JSON is now preferred over XML.
+
+-> What is Web API?
+
+Web API is a framework for building HTTP services using .NET. It allows communication between client and server using HTTP verbs.
+
+-> What is a Microservice?
+
+A Microservice is an independent deployable service focusing on a single responsibility. Web APIs are often used to build microservices.
+
+-> Difference between WebService and WebAPI:
+
+Web Services	                                                                                  Web API
+ 1) Web services are a type of API, which must be accessed through a network connection.	       1) APIs are application interfaces, implying that one application can communicate with another application in a standardized manner.
+ 2) Web service is used for REST, SOAP and XML-RPC for communication.	                           2) API is used for any style of communication.
+ 3) All Web services are APIs.                                                                     3) APIs are not web services.
+
+-> HttpRequest & HttpResponse
+
+ HttpRequest - An object that captures the client's request. 
+ 
+ It contains:
+
+URL,Headers,Body (for POST/PUT),Query Parameters,Cookies
+
+ HttpResponse - An object sent back to the client with:
+
+Status code
+
+Headers,Body (e.g., JSON result),Cookies
+
+-> HTTP Action Verbs (CRUD Mapping)
+
+Action Verb	Description	Attribute
+GET	    Retrieve resource(s)	     [HttpGet]
+POST	Create a new resource	     [HttpPost]
+PUT	    Update an existing resource	 [HttpPut]
+DELETE	Delete a resource	         [HttpDelete]
+
+-> HTTP Status Codes (ActionResult Mapping)
+
+Status Code	Use Case	Return in Web API
+200 OK	                Success	            return Ok(data);
+400 Bad Request	        Invalid input	    return BadRequest("error");
+401 Unauthorized	    Auth failure	    return Unauthorized();
+500 Internal Error	    Server-side error	return StatusCode(500);
+

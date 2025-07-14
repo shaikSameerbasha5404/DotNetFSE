@@ -1,0 +1,55 @@
+# Ignore build output
+bin/
+obj/
+
+# Ignore user-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Rider & VS Code settings
+.idea/
+.vscode/
+.vscode/*
+
+# Visual Studio cache
+.vs/
+*.dbmdl
+
+# ASP.NET Scaffolding
+ScaffoldingReadMe.txt
+
+# NuGet Packages
+*.nupkg
+packages/
+*.snupkg
+
+# Logs
+*.log
+
+# Secrets and config
+secrets.json
+appsettings.Development.json
+
+# Publish output
+publish/
+out/
+
+# Docker
+*.container
+*.dockerfile
+Dockerfile
+docker-compose*
+
+# OS-generated files
+.DS_Store
+Thumbs.db
+
+# Test result files
+TestResults/
+*.coverage
+*.coveragexml
+
+# User-specific folders
+.vs/
